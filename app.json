@@ -1,0 +1,46 @@
+{
+    "name": "Shizy Music",
+    "logo": "https://telegra.ph/file/c57fe476e894ff67442db.jpg",
+    "description": "Shizy Music robot canggih telegram.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/alvrnz/ShizyMusic",
+    "stack": "container",
+    "env": {
+        "BOT_USERNAME": {
+            "description": "𝙵𝚒𝚕𝚕 𝚠𝚒𝚝𝚑 𝚢𝚘𝚞𝚛 𝚋𝚘𝚝 𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎 𝚏𝚛𝚘𝚖 @BotFather 𝚋𝚞𝚝 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 '@' 𝚜𝚢𝚖𝚋𝚘𝚕",
+            "required": true 
+        },
+        "BOT_TOKEN": {
+            "description": "𝙿𝚞𝚝 𝙱𝚘𝚝 𝚃𝚘𝚔𝚎𝚗 𝙾𝚏 𝚈𝚘𝚞𝚛 𝙱𝚘𝚝",
+            "required": true
+        },
+         "OWNER_USERNAME": {
+            "description": "𝙵𝚒𝚕𝚕 𝚢𝚘𝚞 𝙾𝚠𝚗𝚎𝚛 𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎 𝚋𝚞𝚝 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 '@'𝚜𝚢𝚖𝚋𝚘𝚕",
+            "required": true
+        },
+         "UPDATE_CHANNEL": {
+            "description": "𝙵𝚒𝚕𝚕 𝚢𝚘𝚞 𝚞𝚙𝚍𝚊𝚝𝚎 𝚌𝚑𝚊𝚗𝚗𝚎𝚕 𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎 𝚋𝚞𝚝 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 '@'𝚜𝚢𝚖𝚋𝚘𝚕",
+            "required": true
+        },
+         "SUPPORT_GROUP": {
+            "description": "𝙵𝚒𝚕𝚕 𝚢𝚘𝚞 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚐𝚛𝚘𝚞𝚙 𝚞𝚜𝚎𝚛𝚗𝚊𝚖𝚎 𝚋𝚞𝚝 𝚠𝚒𝚝𝚑𝚘𝚞𝚝 𝚞𝚜𝚒𝚗𝚐 '@'𝚜𝚢𝚖𝚋𝚘𝚕",
+            "required": true
+        },
+         "SUDO_USERS": {
+            "description": "𝚂𝚞𝚍𝚘 𝚞𝚜𝚎𝚛𝚜",
+            "required": true
+        },
+        "STRING_SESSION": {
+            "description": "𝙿𝚢𝚛𝚘𝚐𝚛𝚊𝚖 𝚂𝚝𝚛𝚒𝚗𝚐 𝚂𝚎𝚜𝚜𝚒𝚘𝚗: 𝚄𝚜𝚎 𝚃𝚑𝚎𝚜𝚎 𝙱𝚘𝚝 @HinataSessionBot",
+            "required": true
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ]
+}
